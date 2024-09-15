@@ -34,7 +34,7 @@ const allicons={
     return;
   }
    try {
-    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`;
+   const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_KEY}`
   const response=await fetch(url);
   const data=await response.json();
   if(!response.ok){
